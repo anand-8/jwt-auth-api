@@ -66,7 +66,7 @@ The application follows a layered architecture:
 |---|---|---|
 | GET | `/api/user/profile` | Access authenticated user's profile |
 
-*Update these endpoint paths if your actual controller mappings differ.*
+
 
 ## Example Authentication Request
 
@@ -91,7 +91,6 @@ The application follows a layered architecture:
 
 ### Authorization Header
 
-For protected endpoints, include the JWT in the request header:
 
 ```http
 Authorization: Bearer YOUR_JWT_TOKEN
@@ -110,7 +109,7 @@ DB_PASSWORD=your_password
 JWT_SECRET=your_base64_encoded_secret
 ```
 
-Never commit actual database credentials or JWT secrets to GitHub.
+
 
 ## Running the Application
 
